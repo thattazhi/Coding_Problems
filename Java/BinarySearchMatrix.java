@@ -1,5 +1,3 @@
-import java.io.*;
-
 class BinarySearchMatrix {
     static boolean binarySearchMatrix(int[][] mat, int target) {
         if(mat.length == 0 || mat[0].length == 0) return false;

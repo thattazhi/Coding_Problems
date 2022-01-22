@@ -1,9 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class KeepTrucking {
     public boolean is_blocked(List<String> required_tasks, List<String> task_from, List<String> task_to) {

@@ -1,5 +1,3 @@
-import java.util.*;
-
 class LevenshteinDistance {
     public static int levenshteinDistance(String str1, String str2) {
         int[][] memo = new int[str1.length() + 1][str2.length() + 1];

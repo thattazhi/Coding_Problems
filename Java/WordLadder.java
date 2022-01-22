@@ -1,7 +1,6 @@
 import java.util.HashSet;
 import java.util.Set;
 import java.util.List;
-import java.util.ArrayList;
 
 class WordLadder {
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {

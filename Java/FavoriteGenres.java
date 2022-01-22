@@ -57,8 +57,8 @@ public class FavoriteGenres {
 
     public static void main(String[] args) {
         Map<String, List<String>> userMap = new HashMap<>();
-        userMap.put("David", new ArrayList(Arrays.asList("song1", "song2", "song3", "song4", "song8")));
-        userMap.put("Emma", new ArrayList(Arrays.asList("song5", "song6", "song7")));
+        userMap.put("David", new ArrayList<String>(Arrays.asList("song1", "song2", "song3", "song4", "song8")));
+        userMap.put("Emma", new ArrayList<String>(Arrays.asList("song5", "song6", "song7")));
 
         Map<String, List<String>> genreMap = new HashMap<>();
         genreMap.put("Rock", new ArrayList<String>(Arrays.asList("song1", "song3")));
