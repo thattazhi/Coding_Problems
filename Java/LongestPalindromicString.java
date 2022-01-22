@@ -2,7 +2,7 @@ public class LongestPalindromicString
 {
     public String longestPalindrome(String s)
     {
-        if(s.length() < 2) return s.length();
+        if(s.length() < 2) return s;
 
         int max = 0, start = 0, end = 0;
 

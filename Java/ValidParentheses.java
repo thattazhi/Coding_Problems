@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+import java.util.Stack;
+
+>>>>>>> Stashed changes
 class ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> stack= new Stack<>();

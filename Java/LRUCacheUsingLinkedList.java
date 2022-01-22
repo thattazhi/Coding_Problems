@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class LRUCacheUsingLinkedList {
     
     private class Node {
@@ -16,12 +19,12 @@ class LRUCacheUsingLinkedList {
     private int size;
     private Node head;
     private Node tail;
-    private Map<Integer, Node> map;
+    private Map <Integer, Node> map;
 
-    public LRUCache(int capacity) {
+    public LRUCacheUsingLinkedList(int capacity) {
         this.capacity = capacity;
         size = 0;
-        map = new HashMap<>();
+        map = new HashMap <>();
     }
     
     public int get(int key) {

@@ -1,9 +1,14 @@
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+
 class LRUCacheUsingQueue {
     private int capacity;
     private Deque<Integer> q;
     private Map<Integer, Integer> map;
 
-    public LRUCache(int capacity) {
+    public LRUCacheUsingQueue(int capacity) {
         this.capacity = capacity;
         q = new LinkedList<>();
         map = new HashMap<>();

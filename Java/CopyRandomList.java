@@ -1,4 +1,6 @@
-/*
+import java.util.HashMap;
+import java.util.Map;
+
 // Definition for a Node.
 class Node {
     public int val;
@@ -13,7 +15,7 @@ class Node {
         random = _random;
     }
 };
-*/
+
 class Solution {
 
     Map<Node, Node> map = new HashMap<>();
