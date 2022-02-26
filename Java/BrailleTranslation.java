@@ -2,10 +2,8 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class BrailleTranslation {
-    private static Map<Character, String> dictionary;
-    
-    public BrailleTranslation() {
-        dictionary = new HashMap<>();
+    public static String solution(String s) {
+		Map<Character, String> dictionary = new HashMap<>();
     	dictionary.put(' ', "000000");
     	dictionary.put('a', "100000");
     	dictionary.put('b', "110000");
@@ -33,9 +31,6 @@ public class BrailleTranslation {
     	dictionary.put('x', "101101");
     	dictionary.put('y', "101111");
     	dictionary.put('z', "101011");
-    }
-    
-    public static String solution(String s) {
     	String ans = "";
     	
     	for(char ch: s.toCharArray()) {
@@ -53,9 +48,8 @@ public class BrailleTranslation {
 
 class Test {
     public static void main(String[] args) {
-        BrailleTranslation bt = new BrailleTranslation();
-        System.out.println(bt.solution("code").equals("100100101010100110100010"));
-        System.out.println(bt.solution("Braille").equals("000001110000111010100000010100111000111000100010"));
-        System.out.println(bt.solution("The quick brown fox jumps over the lazy dog").equals("000001011110110010100010000000111110101001010100100100101000000000110000111010101010010111101110000000110100101010101101000000010110101001101100111100011100000000101010111001100010111010000000011110110010100010000000111000100000101011101111000000100110101010110110"));
+        System.out.println(BrailleTranslation.solution("code").equals("100100101010100110100010"));
+        System.out.println(BrailleTranslation.solution("Braille").equals("000001110000111010100000010100111000111000100010"));
+        System.out.println(BrailleTranslation.solution("The quick brown fox jumps over the lazy dog").equals("000001011110110010100010000000111110101001010100100100101000000000110000111010101010010111101110000000110100101010101101000000010110101001101100111100011100000000101010111001100010111010000000011110110010100010000000111000100000101011101111000000100110101010110110"));
     }
 }
