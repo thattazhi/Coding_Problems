@@ -117,6 +117,6 @@ public class BestDaysToBuyAndSellStocks {
     }
 
     public static void main(String[] args) {
-        new Main().run();
+        new BestDaysToBuyAndSellStocks().run();
     }
 }
